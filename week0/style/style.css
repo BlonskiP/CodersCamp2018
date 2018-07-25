@@ -1,0 +1,39 @@
+
+/*
+Hierarchia:
+Inline
+Style
+Styl z pilku css
+Wartość domyślna
+
+!important zwiększa wartość
+*/
+
+
+body
+{
+    background-color:black;
+    font-family: Verdana;
+    font-size:20px;
+    color:white;
+    
+}
+
+h1
+{
+    color: red;
+    font-size:48px;
+}
+
+a:link /*nieodwiedzony link */
+{
+color:yellow;
+}
+a:visited /*odwiedzony link */
+{
+color:yellow;
+}
+a:hover /* link najechany kursorem*/
+{
+color:red;
+}
