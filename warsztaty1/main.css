@@ -2,10 +2,12 @@ body{
     margin:0;
     padding:0;
     color:#fff;
+    font-family: 'Hanalei Fill', cursive;
+
 }
 
 h1 {
-    font-size:56px;
+    font-size:90px;
     font-weight:900;
     margin:0;
 }
@@ -40,7 +42,7 @@ a
 }
 .nav-item
 {
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out; /*przejście po hoverze */
     border-radius: 100%;
     border: solid   1px white;
     width:72px;
