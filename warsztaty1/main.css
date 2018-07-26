@@ -1,9 +1,21 @@
 body{
+    overflow: hidden;
     margin:0;
     padding:0;
     color:#fff;
     font-family: 'Hanalei Fill', cursive;
+    font-size:16px;
+    font-weight:300;
+    line-height: 1.75;
+}
 
+.bg {
+    background: url("https://image.ibb.co/hmyUDS/bg.jpg") repeat-x bottom left; /*zdjęcia jako tło*/
+    height: 100%; 
+    position: absolute; /* zawieszone w powietrzu*/
+    background-size: 1500px; 
+    width: 4500px;
+    animation: bg 60s linear infinite; /* Dopisane */
 }
 
 h1 {
@@ -28,7 +40,11 @@ p {
 .middle-box {
     text-align: center;
     width:100%;
+    animation: show 1s 1s forwards;
+    opacity: 0;
+    margin-top: -300px;
 }
+
 a
 {
     color: #fff; /* kolor linku */
@@ -60,4 +76,25 @@ a
 .nav-item a
 {
     font-size:28px;
+}
+/*ANIMACJA */
+@keyframes show {
+  /* Nowe */
+  0% {
+    margin-top: -268px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: -300px;
+    opacity: 1;
+  }
+}
+@keyframes bg {
+  /* Dopisane */
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1500px;
+  }
 }
