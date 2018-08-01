@@ -1,0 +1,65 @@
+
+/*
+Hierarchia:
+Inline
+Style
+Styl z pilku css
+Wartość domyślna
+
+!important zwiększa wartość
+*/
+
+
+body
+{
+    background-color:black;
+    color:white;
+}
+
+#container
+{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    box-sizing: border-box;
+    padding:10px;
+}
+h1
+{
+    
+}
+
+#titles
+{
+margin: 0 auto;
+width:300px;
+}
+#riddle-list
+{
+margin: 0 auto;
+width:300px;
+}
+
+#riddle-list > ol > li > a
+{
+    color:red;
+    text-decoration: none;
+    margin-left: 3%;
+    display: block;
+    padding-top:3%;
+}
+#riddle-list > ol > li > a:hover, #riddle-list > ol > li > a:focus
+{
+ color:white;
+ outline:none;
+}
+a
+{
+    color:red;
+    text-decoration: none;
+}
+#footer
+{
+    width:1000px;
+    margin:0 auto;
+}
